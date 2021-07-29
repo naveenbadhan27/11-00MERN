@@ -1,0 +1,14 @@
+.ac{
+	color: purple;
+	font-size: 35px;
+	font-family: gabriola;
+	font-weight: bold;
+	font-style: italic;
+	text-decoration: underline;
+	/*text-decoration: line-through;*/
+	/*text-align: center;*/
+	text-indent: 100px;
+	/*letter-spacing: 10px;*/
+	/*word-spacing: 30px;*/
+	line-height: 30px;
+}
