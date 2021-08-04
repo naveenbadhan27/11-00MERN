@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<style type="text/css">
+		.ab{
+			height: 100px;
+			width: 100px;
+			background: red;
+			animation: gif 4s ease infinite;
+		}
+		@keyframes gif{
+			25%{
+				background: blue;
+			}
+			50%{
+				background: green;
+			}
+			75%{
+				background: yellow;
+			}
+			100%{
+				background: red;
+			}
+		}
+
+		.ac{
+			height: 150px;
+			width: 2px;
+			background: black;
+			position: absolute;
+			left: 50%;
+			animation: rot 5s linear infinite;
+		}
+		@keyframes rot{
+			100%{
+				transform: rotate(360deg);
+			}
+		}
+
+
+	</style>
+</head>
+<body>
+
+<div class="ab">
+</div>
+
+
+<div class="ac">
+</div>
+
+
+
+
+
+</body>
+</html>
