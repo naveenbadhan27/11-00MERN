@@ -1,0 +1,39 @@
+<style type="text/css">
+.pen {
+    width: 2px;
+    height: 150px;
+    background: #00f;
+    position: absolute;
+    left: 50%;
+    animation:rot 2s linear infinite;
+    transform-origin: 100% 0%;
+}
+
+.rod{
+    height: 20px;
+    width: 20px;
+    background: red;
+    position: absolute;
+    bottom: 0px;
+    margin-left:-9px ;
+    border-radius: 50%;
+}
+
+
+@keyframes rot{
+    50%{
+        transform: rotate(30deg);
+    }
+    100%,0%{
+        transform: rotate(-30deg);
+    }
+} 
+
+
+/*@keyframes rot{
+    100%{
+        transform: rotate(360deg);
+    }
+} */
+</style>
+<div class="pen"><div class="rod"></div></div>
