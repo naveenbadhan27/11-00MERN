@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+
+
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.css">
+	  
+	<script type="text/javascript" charset="utf8" src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.js"></script>
+
+<script type="text/javascript">
+	
+$(document).ready( function () {
+    $('#table').DataTable();
+} );
+
+</script>
+
+</head>
+<body>
+
+<div class="col-lg-4">
+
+
+<div class="carousel slide" id="mycaro" data-ride="carousel">
+	<ul class="carousel-indicators">
+		<li class="active" data-slide-to='0' data-target="#mycaro"></li>
+		<li data-slide-to='1' data-target="#mycaro"></li>
+		<li data-slide-to='2' data-target="#mycaro"></li>
+	</ul>
+	<div class="carousel-inner">
+		<div class="item active">
+			<img src="https://source.unsplash.com/1600x900" class="img-responsive">
+		</div>
+		<div class="item">
+			<img src="https://source.unsplash.com/1600x900" class="img-responsive">
+		</div>
+		<div class="item">
+			<img src="https://source.unsplash.com/1600x900" class="img-responsive">
+		</div>
+	</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+	<ul>
+		<li><a href="">Home</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">Gallery</a></li>
+	</ul>
+
+
+	<ul class="list-group">
+		<li class="list-group-item"><a href="">Home</a></li>
+		<li class="list-group-item"><a href="">About</a></li>
+		<li class="list-group-item"><a href="">Contact</a></li>
+		<li class="list-group-item"><a href="">Gallery</a></li>
+	</ul>
+
+
+	<ul class="pagination">
+		<li><a href="">Home</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">Gallery</a></li>
+	</ul>
+
+
+	<ul class="breadcrumb">
+		<li><a href="">Home</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">Gallery</a></li>
+	</ul>
+
+	<ul class="pager">
+		<li><a href="">Home</a></li>
+		<li><a href="">About</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">Gallery</a></li>
+	</ul>
+
+	<ul class="nav nav-tabs">
+		<li><a href="">Home</a></li>
+		<li class="active"><a href="">About</a></li>
+		<li><a href="">Contact</a></li>
+		<li><a href="">Gallery</a></li>
+	</ul>
+
+
+	<ul class="nav nav-pills">
+		<li><a href="">Home</a></li>
+		<li><a href="">About</a></li>
+		<li class="active"><a href="">Contact</a></li>
+		<li><a href="">Gallery</a></li>
+	</ul>
+
+
+
+
+</div>
+
+
+<div class="col-lg-4">
+	
+
+	<table id="table">
+		<thead>
+			<tr>
+				<th>Sno</th>
+				<th>Name</th>
+				<th>Class</th>
+				<th>Roll no</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Naveen</td>
+				<td>5</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Ravi</td>
+				<td>5</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Raju</td>
+				<td>5</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Priya</td>
+				<td>5</td>
+				<td>4</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+
+<br><br><br>
+
+
+	<table class="table table-hover table-bordered table-striped">
+		<thead>
+			<tr class="danger">
+				<th>Sno</th>
+				<th>Name</th>
+				<th>Class</th>
+				<th>Roll no</th>
+			</tr>
+		</thead>
+		<tbody>
+			<tr>
+				<td>1</td>
+				<td>Naveen</td>
+				<td>5</td>
+				<td>1</td>
+			</tr>
+			<tr>
+				<td>2</td>
+				<td>Ravi</td>
+				<td>5</td>
+				<td>2</td>
+			</tr>
+			<tr>
+				<td>3</td>
+				<td>Raju</td>
+				<td>5</td>
+				<td>3</td>
+			</tr>
+			<tr>
+				<td>4</td>
+				<td>Priya</td>
+				<td>5</td>
+				<td>4</td>
+			</tr>
+		</tbody>
+	</table>
+
+
+
+
+
+
+</div>
+
+<style type="text/css">
+	.box{
+		/*box-shadow: 0px 0px 5px inset grey;*/
+		padding: 10px;
+		transition: 1s;
+	}
+	.box:hover{
+		box-shadow: 0px 0px 5px greenyellow;
+	}
+	.box-img{
+		height: 140px;
+		overflow: hidden;
+	}
+	.box-img img{
+		max-height: 140px;
+		margin: auto;
+	}
+</style>
+
+
+<div class="col-lg-2 box">
+	<div class="box-img">
+		<img src="../36307.jpg" class="img-responsive img-circle">
+	</div>
+	<h3>Puma Shoes</h3>
+	<span class="brand">Puma</span><br>
+	<del>&#8377; 1000</del> &#8377; 899
+	<br>
+	<a href="" class="btn btn-danger">Add to cart</a>
+
+</div>
+
+
+<div class="col-lg-2 box">
+	<div class="box-img">
+		<img src="../36307.jpg" class="img-responsive img-rounded">
+	</div>
+	<h3>Puma Shoes</h3>
+	<span class="brand">Puma</span><br>
+	<del>&#8377; 1000</del> &#8377; 899
+	<br>
+	<a href="" class="btn btn-danger">Add to cart</a>
+
+</div>
+
+
+<div class="col-lg-2 box">
+	<div class="box-img">
+		<img src="../36307.jpg" class="img-responsive img-thumbnail">
+	</div>
+	<h3>Puma Shoes</h3>
+	<span class="brand">Puma</span><br>
+	<del>&#8377; 1000</del> &#8377; 899
+	<br>
+	<a href="" class="btn btn-danger">Add to cart</a>
+
+</div>
+
+<div class="col-lg-2 box">
+	<div class="box-img">
+		<img src="https://source.unsplash.com/random" class="img-responsive">
+	</div>
+	<h3>Puma Shoes</h3>
+	<span class="brand">Puma</span><br>
+	<del>&#8377; 1000</del> &#8377; 899
+	<br>
+	<a href="" class="btn btn-danger">Add to cart</a>
+
+</div>
+
+
+
+
+
+
+</body>
+</html>
