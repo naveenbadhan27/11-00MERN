@@ -3,8 +3,13 @@
 <head>
 	<meta charset="utf-8">
 	<title></title>
+	<style type="text/css">
+		.av{
+			color: rebeccapurple;
+		}
+	</style>
 </head>
-<body>
+<body id="body">
 <!-- 
 =
 ==
@@ -31,16 +36,52 @@ color
 
  -->
 
-<input type="text" id="nme" placeholder="Fill your Solid Color" autofocus>
+<input type="text" class="input" onkeyup="backgrd()" id="clr" placeholder="Fill your Solid Color" autofocus>
 
 <br>
 
 
-<input type="text" id="nme" placeholder="Fill your Gradient 1" autofocus>
+<input type="text" class="input" onkeyup="backgrd()" id="cle" placeholder="Fill your Gradient 1" autofocus>
 
-<input type="text" id="nme" placeholder="Fill your Gradient 2" autofocus>
+<input type="text" class="input" onkeyup="backgrd()" id="clu" placeholder="Fill your Gradient 2" autofocus>
 
-<input type="text" id="nme" placeholder="Fill your Gradient 3" autofocus>
+<input type="text" class="input" onkeyup="backgrd()" id="clk" placeholder="Fill your Gradient 3" autofocus>
+
+<script type="text/javascript">
+	
+
+	function backgrd(){
+		var cl1 = document.getElementById('clr').value;
+		var cl2 = document.getElementById('cle').value;
+		var cl3 = document.getElementById('clu').value;
+		var cl4 = document.getElementById('clk').value;
+
+		if (cl1 != "") {
+			document.getElementById('body').style.background = cl1;
+		}else if(cl1 == ''){
+			if (cl2 != '' && cl3 != '' && cl4 != '') {
+				document.getElementById('body').style.background = 'linear-gradient(to left, '+cl2+' , '+cl3+' , '+cl4+')';
+							// var x = document.getElementsByClassName('input');
+							// // console.log(x);
+							// for (var i = 0; i < x.length; i++) {
+							// 	x[i].style.background = 'transparent';
+							// 	x[i].style.color = 'transparent';
+							// 	// x[i]
+							// }
+							// document.getElementsByClassName('input').style.background = 'transparent';
+			}else{
+				document.getElementById('body').style.background = 'white';
+			}
+		}else{
+				document.getElementById('body').style.background = 'white';
+		}
+
+
+	}
+
+
+
+</script>
 
 
 
