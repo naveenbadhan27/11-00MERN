@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title></title>
+</head>
+<body>
+<!-- 
+=
+==
+===
+ -->
+
+<!-- 
+border-radius
+
+background-color
+
+box-shadow
+
+borderRadius
+
+backgroundColor
+
+boxShadow
+
+
+color
+
+color
+
+ -->
+
+<input type="text" id="nme" placeholder="Fill your Solid Color" autofocus>
+
+<br>
+
+
+<input type="text" id="nme" placeholder="Fill your Gradient 1" autofocus>
+
+<input type="text" id="nme" placeholder="Fill your Gradient 2" autofocus>
+
+<input type="text" id="nme" placeholder="Fill your Gradient 3" autofocus>
+
+
+
+
+<br><br><br>
+
+
+
+<input type="text" id="nme" placeholder="Fill your Name" autofocus>
+
+<button onclick="abc()">Click 1</button>
+
+<button ondblclick="abc()">Click 2</button>
+
+<script type="text/javascript">
+	
+		function abc(){
+			var name = document.getElementById('nme').value;
+			if(name == '')
+			{
+				alert('Please fill your name');
+				document.getElementById('nme').focus();
+				document.getElementById('nme').style.boxShadow = "0px 0px 5px red";
+				document.getElementById('nme').style.border = "1px solid red";
+			}else{
+				alert(name);
+			}
+		}
+
+</script>
+
+
+
+
+<select id="city" onchange="city()">
+	<option value="Ludhiana">Ludhiana</option>
+	<option value="Phagwara">Phagwara</option>
+	<option value="New Delhi">New Delhi</option>
+	<option value="Jalandhar">Jalandhar</option>
+	<option value="Guraya">Guraya</option>
+</select>
+
+<br>
+
+<input type="text" id="cl" placeholder="Fill your Name" onkeyup="newname()">
+
+<p id="print"></p>
+
+
+	<script type="text/javascript">
+
+
+
+
+
+		function newname(){
+			var nm = document.getElementById('cl').value;
+			document.getElementById('print').innerHTML = nm;
+			// document.write(nm);
+		}
+
+
+
+		function city(){
+			var ct = document.getElementById('city').value;
+			alert(ct);
+		}
+
+
+
+		var a = 20;
+		var b = "20";
+
+		if (a === b) {
+			console.log('yes');
+		}else{
+			// console.log('no');
+			if(a == b){
+				console.log('value matched')
+			}else{
+				console.log('no');
+			}
+		}
+
+
+		for (var i = 0; i < 10; i++) {
+			console.log(i);
+		}
+
+		for (var i = 10; i > 0; i--) {
+			console.log(i);
+		}
+
+
+
+		// abc();
+
+	</script>
+
+
+
+
+
+
+</body>
+</html>
