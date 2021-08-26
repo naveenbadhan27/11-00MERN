@@ -61,14 +61,14 @@ color
 		}else if(cl1 == ''){
 			if (cl2 != '' && cl3 != '' && cl4 != '') {
 				document.getElementById('body').style.background = 'linear-gradient(to left, '+cl2+' , '+cl3+' , '+cl4+')';
-							// var x = document.getElementsByClassName('input');
+							var x = document.getElementsByClassName('input');
 							// // console.log(x);
-							// for (var i = 0; i < x.length; i++) {
-							// 	x[i].style.background = 'transparent';
-							// 	x[i].style.color = 'transparent';
-							// 	// x[i]
-							// }
-							// document.getElementsByClassName('input').style.background = 'transparent';
+							for (var i = 0; i < x.length; i++) {
+								x[i].style.background = 'transparent';
+								x[i].style.color = 'transparent';
+								// x[i]
+							}
+							document.getElementsByClassName('input').style.background = 'transparent';
 			}else{
 				document.getElementById('body').style.background = 'white';
 			}
